@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/home/hegelpro/Documents/mother-site/css/normalize.css">
+    <style>
+      body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+
+      #canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .main {
+        flex-direction: column;
+        padding: 40px;
+        padding-top: 0;
+        display: flex;
+        position: relative;
+
+       background: #e1eec3; /* fallback for old browsers */
+       background: -webkit-linear-gradient(to top, #e1eec3, #f05053); /* Chrome 10-25, Safari 5.1-6 */
+       background: linear-gradient(to top, #e1eec3, #f05053); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+        /* flex-wrap: wrap; */
+      }
+      .block {
+        width: 500px;
+        height: 500px;
+        /* background-color: red; */
+      }
+      #congrat h1 {
+        font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-size: 50px;
+        font-style: italic;
+      }
+      #congrat p {
+        font-size: 20px;
+        font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+        white-space: pre-line;
+        /* background-image:linear-gradient(to right top, rgb(58, 214, 133)) ; */
+      }
+    </style>
+</head>
+<body>
+
+<div class="main">
+  <div class="block"></div>
+  <div id="congrat">
+    <h1>Поздравляю!</h1>
+
+    <p>Мамочка моя родная,
+      С 8 Марта, дорогая!
+      Я скажу тебе любя:
+      Лучше в мире нет тебя.
+      <br>
+      Я тебе желаю счастья,
+      Пусть уходят все ненастья.
+      Красоты, любви, тепла!
+      Будь здоровой ты всегда!</p>
+  </div>
+
+</div>
+
+<canvas id="canvas" width="500" height="500"></canvas>
+
+
+
+
+<img id="image1" src="img/V0mpSLCzEpU.jpg" alt="" style="display: none;">
+<img id="image2" src="img/border.png" alt="" style="display: none;">
+
+
+
+<script>
+var context = document.getElementById('canvas').getContext('2d'),
+    image1 = document.getElementById('image1'),
+    image2 = document.getElementById('image2');
+
+congrat.style.width = screen.availHeight - 500 +"px";
+
+function drawImage(lol) {
+  context.clearRect(0, 0, 500, 500);
+  context.drawImage(image1, 0, 0, 425, 425, lol/4+75, lol/4+75, 250+lol/2, 250+lol/2);
+  context.drawImage(image2, 0, 0, 500, 500, 0, 0, 400+lol, 400+lol);
+};
+var flag = true,
+    inte = 0;
+
+setInterval(function() {
+  if(flag) {
+    if(inte <= 50) {
+      inte++;
+    } else {
+      flag = false;
+    }
+  } else {
+    if(inte >= 0) {
+      inte--;
+    } else {
+      flag = true;
+    }
+  };
+
+  drawImage(inte);
+}, 1000/60);
+
+
+
+</script>
+
+</body>
+</html>
