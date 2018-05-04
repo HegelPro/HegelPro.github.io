@@ -1,0 +1,126 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+
+#main {
+  background-image: url(../img/6656.jpg);
+  border-top: 5px solid rgb(18, 17, 18);
+  background: radial-gradient(70% 70%, rgba(20, 192, 255, 1) 0%, rgba(25, 182, 240, 1) 29%, rgba(255,255,255,1) 100%);
+}
+
+
+#happy {
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 50%;
+  width: 300px;
+  height: 131px;
+
+  background-position: right;
+  background-image: url(../img/23666711.png);
+  /* background-color: rgb(242, 153, 55); */
+}
+
+#birthday {
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  right: 50%;
+  width: 300px;
+  height: 131px;
+
+  background-image: url(../img/23666711.png);
+  /* background-color: rgb(245, 187, 218); */
+}
+
+#balloons {
+  position: relative;
+  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  width: 700px;
+  height: 650px;
+
+
+  background-image: url(../img/balloons.png);
+  background-repeat: no-repeat;
+  /* background-position: 0 0; */
+}
+
+.star {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  /* background-color: rgb(11, 22, 16); */
+  z-index: 100;
+  background-image: url(../img/34.png);
+  background-size: 50px 50px;
+}
+
+
+.foto-galary .first {
+  position: relative;
+  border-top: 5px solid rgb(18, 17, 18);
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-image: url(../img/4097.jpg);
+}
+
+
+.foto-galary .fatherOne {
+  top: 0;
+  left: -20%;
+  position: absolute;
+  width: 100%;
+  height: 900px;
+
+
+  /* background-position: 25% 75%; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(../img/333.png);
+}
+
+
+.foto-galary .poem {
+  line-height: 40px;
+  position: absolute;
+  top: 100px;
+  right: 200px;
+  width: 500px;
+  /* height: 700px; */
+  padding: 50px 40px;
+  padding-top: 10px;
+
+  overflow-wrap: break-word;
+  word-break: break-all;
+  white-space: pre;
+
+
+  font-family: 'Marck Script', cursive;
+  font-size: 30px;
+
+
+  background-color: rgb(79, 185, 255);
+
+
+  border: 10px solid rgb(134, 213, 199);
+  border-top-right-radius: 100% 30px;
+  border-bottom-left-radius: 100% 30px;
+  border-top-left-radius: 100% 100px;
+  border-bottom-right-radius: 100% 100px;
+  box-shadow: 12px 20px 5px 4px rgba(0, 0, 255, .2);
+}
+
+
+.foto-galary .poem strong {
+  font-size: 45px;
+  color: red;
+}
