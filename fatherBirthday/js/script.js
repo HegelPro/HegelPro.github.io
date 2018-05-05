@@ -129,7 +129,7 @@ Controller.prototype.mouseClick  = function mouseClick() {
     that.model.addElemArgument(elem, [event.clientY, event.clientX], [screen.availHeight*0.5, screen.availWidth*0.5], 1, true, "left", "top", "star")
   }
 
-  window.addEventListener("mousedown", callback);
+  window.addEventListener("click", callback);
 }
 
 
