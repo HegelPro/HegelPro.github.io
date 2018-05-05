@@ -6,7 +6,6 @@ html {
 
 
 #main {
-  background-image: url(../img/6656.jpg);
   border-top: 5px solid rgb(18, 17, 18);
   background: radial-gradient(70% 70%, rgba(20, 192, 255, 1) 0%, rgba(25, 182, 240, 1) 29%, rgba(255,255,255,1) 100%);
 }
