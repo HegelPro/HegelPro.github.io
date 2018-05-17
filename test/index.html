@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app center">
+      <h1 class="page-title">Книжная полка</h1>
+      <button type="button" name="button" id="adder" class="adder btn-1">Добавить книгу</button>
+
+      <form id="books-adder" class="books-adder">
+        <h2>Редактирование книги</h2>
+
+        <label for="calling" class="calling">Название</label>
+        <p><input type="text" name="calling" id="calling" value="" autocomplete="off"></p>
+
+        <label for="author" class="author">Автор</label>
+        <p><input type="text" name="author" id="author" value="" autocomplete="off"></p>
+
+        <label for="year-wrote" class="year-wrote">Год выпуска</label>
+        <p><input type="text" name="year-wrote" id="year-wrote" value="" class="year-input" autocomplete="off"></p>
+
+        <label for="url" class="url">Адрес изображения</label>
+        <p><input type="text" name="url" id="url" value="" list="books-on-pc" autocomplete="off"></p>
+
+        <button type="button" name="button" id="saver" class="saver btn-1">Сохранить</button>
+        <button type="button" name="button" id="exiter" class="exiter btn-1">Отменить</button>
+      </form>
+
+      <form id="books-adder-edit" class="books-adder-edit">
+        <h2>Редактирование книги</h2>
+
+        <label for="calling-edit" class="calling">Название</label>
+        <p><input type="text" name="calling-edit" id="calling-edit" value=""></p>
+
+        <label for="author-edit" class="author">Автор</label>
+        <p><input type="text" name="author-edit" id="author-edit" value=""></p>
+
+        <label for="year-wrote-edit" class="year-wrote">Год выпуска</label>
+        <p><input type="text" name="year-wrote-edit" id="year-wrote-edit" value="" class="year-input"></p>
+
+        <label for="url-edit" class="url">Адрес изображения</label>
+        <p><input type="text" name="url-edit" id="url-edit" value="" list="books-on-pc" autocomplete="off"></p>
+
+        <button type="button" name="button" id="saver-edit" class="saver btn-1">Сохранить</button>
+        <button type="button" name="button" id="exiter-edit" class="exiter btn-1">Отменить</button>
+      </form>
+    </div>
+
+    <datalist id="books-on-pc"></datalist>
+
+    <table class="books-list center" id="books-list"></table>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
