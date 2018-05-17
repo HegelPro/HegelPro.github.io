@@ -62,7 +62,7 @@ function addBook(event) {
     alert('Пожалуйста, заполнети поле \'Автор\'');
   } else if ( year === '' )  {
     alert('Пожалуйста, заполнети поле \'Год выпуска\'');
-  } if ( isNaN(year) ) {
+  } else if ( isNaN(year) ) {
     alert('Пожалуйста, введите число в поле \'Год выпуска\'');
   } else if( Number(year) > 2017 ) {
     alert('Год должен быть меньше 2017');
