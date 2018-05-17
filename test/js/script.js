@@ -56,16 +56,16 @@ function addBook(event) {
   var url = document.querySelector('#url').value
 
 
-  if (isNaN(year)) {
-    alert('Пожалуйста, введите число в поле \'Год выпуска\'');
-  } else if( Number(year) > 2017 ) {
-    alert('Год должен быть меньше 2017');
-  } else if ( calling === '' ) {
+  if ( calling === '' ) {
     alert('Пожалуйста, заполнети поле \'Название\'');
   } else if ( author === '' ) {
     alert('Пожалуйста, заполнети поле \'Автор\'');
-  } else if ( year === '' ) {
+  } else if ( year === '' )  {
     alert('Пожалуйста, заполнети поле \'Год выпуска\'');
+  } if ( isNaN(year) ) {
+    alert('Пожалуйста, введите число в поле \'Год выпуска\'');
+  } else if( Number(year) > 2017 ) {
+    alert('Год должен быть меньше 2017');
   } else {
     books.addBook(calling, author, year, url)
     table.innerHTML = books.creatHTMLForTable()
