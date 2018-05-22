@@ -1,7 +1,7 @@
 function Model() {
   this.elemArguments = []
 }
-
+setTimeout(lol, 2000)
 
 Model.prototype.addElemArgument = function addElemArgument(elem, start, end, step, shouldDelete, leftRight, topBottom, type) {
   var elemArgument
@@ -187,14 +187,16 @@ var model = new Model()
 var view = new View(document.body)
 var controller = new Controller(model, view)
 
-
-var lol = 0
-controller.start()
-controller.mouseClick()
-
-
-var main = document.querySelector("#main")
+funnction lol() {
+	var lol = 0
+	controller.start()
+	controller.mouseClick()
 
 
-main.style.width = screen.availWidth
-main.style.height = screen.availHeight
+	var main = document.querySelector("#main")
+
+
+	main.style.width = screen.availWidth
+	main.style.height = screen.availHeight
+}
+
