@@ -1,0 +1,48 @@
+.logo {
+
+}
+
+.logo_pos {
+    margin: 50px 0;
+}
+
+.logo_text {
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 400;
+    white-space: pre-line;
+    text-align: center;
+}
+
+.logo_text-grey {
+    color: rgb(107, 107, 107);
+}
+
+.nav-main {
+
+}
+
+.nav-main__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-main__list__iteam {
+    width: 100%;
+    text-align: center;    
+}
+
+.nav-main__list__iteam_margins {
+    margin-top: 10px;
+}
+
+.nav-main__list__iteam__link {
+    text-decoration: none;
+}
+
+.nav-main__list__iteam__link_text-gray {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(107, 107, 107);
+}

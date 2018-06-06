@@ -1,0 +1,39 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: rgb(232, 246, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+.site {
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pos-new-section {
+    margin-top: 30px;
+}
+
+.our-gallary {
+    padding-bottom: 40px;
+}
+
+.our-gallary_bg-ddd {
+    background: #f6f6f6;
+}
+
+.our-contact-me {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.our-footer {
+    padding: 30px;
+}
+
+.our-footer_bg-171 {
+    background: rgb(171, 171, 171);    
+}

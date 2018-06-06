@@ -1,0 +1,136 @@
+.footer-main__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-main__list__iteam {
+    width: 32%;
+    margin-right: 2%;
+}
+
+.footer-main__list__iteam:last-child {
+    margin-right: 0;
+}
+
+/* Footer-Info */
+.footer-info__title {
+    
+}
+
+.footer-info__title_text {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.footer-info__text {
+
+}
+
+.footer-info__text_text {
+    font-size: 15px;
+}
+
+/* Blog-Post */
+.blog-posts__title {
+
+}
+
+.blog-posts__title_text {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.blog-posts__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.blog-posts__list__iteam__photo {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+
+.blog-posts__list__iteam {
+    display: flex;
+}
+
+.blog-posts__list__iteam:first-child {
+    border-bottom: 1px solid white;
+}
+
+.blog-posts__list__iteam__disision {
+    margin-top: 15px;
+}
+
+.blog-posts__list__iteam__disision__title {
+    margin: 0;
+}
+
+.blog-posts__list__iteam__disision__title_text {
+    font-size: 18px;    
+    font-weight: 400;
+}
+
+.blog-posts__list__iteam__disision__text {
+    margin: 0;
+}
+
+.blog-posts__list__iteam__disision__text_text {
+    font-size: 15px;
+}
+
+/* Popular-Tags */
+.popular-tags__title {
+
+}
+
+.popular-tags__title_text {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.popular-tags__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.popular-tags__list__iteam {
+    flex-wrap: wrap;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.popular-tags__list__tag {
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;    
+}
+
+.popular-tags__list__tag_bg-108 {
+    background: rgb(108, 108, 108);
+}
+
+.popular-tags__list__tag_text {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;    
+}
+
+.popular-tags__list__tag:hover {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.popular-tags__list__tag_bg-108:hover {
+    background: black;    
+}

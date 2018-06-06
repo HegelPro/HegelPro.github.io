@@ -1,0 +1,10 @@
+import "../css/left.css"
+import "../css/right.css"
+import "../css/gallary.css"
+import "../css/site.css"
+import "../css/navigation.css"
+import "../css/contact-me.css"
+import "../css/footer.css"
+import "../css/about-me.css"
+
+// import "bootstrap/dist/css/bootstrap.min.css"

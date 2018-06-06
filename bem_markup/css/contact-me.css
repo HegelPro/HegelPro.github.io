@@ -1,0 +1,61 @@
+.contact-me {
+    
+}
+
+.contact-me_bg-ddd {
+    background: #f6f6f6;
+}
+
+.contact-me__form {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-me__form__title {
+
+}
+
+.contact-me__form__title_text {
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.contact-me__form__quetion {
+
+}
+
+.contact-me__form__quetion_text {
+    font-size: 15px;
+}
+
+.contact-me__form__label_text {
+    font-size: 15px;   
+}
+
+.contact-me__form__btn {
+    width: 100%;
+}
+
+.contact-me__form__btn_text {
+    padding: 10px;    
+}
+
+.contact-me__form__btn_bg-black {
+    background: black;
+    color: white;
+    border: none;    
+}
+
+.contact-me__form__input {
+    box-sizing: border-box;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;    
+}
+
+.contact-me__form__input:last-child {
+    /* margin-bottom: 0px; */
+}

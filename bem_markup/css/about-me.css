@@ -1,0 +1,175 @@
+.about-me {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 200px;
+    padding-right: 200px;   
+}
+
+.about-me_text {
+    color: white;
+    font-weight: 400;
+}
+
+.about-me_color-91 {
+    background: rgb(91, 91, 91);
+}
+
+main.about-me .center {
+     
+}
+
+.about-me__title {
+    text-align: center;
+}
+
+.about-me__title_text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about-me__photo {
+    width: 100%;
+}
+
+.about-me__info__name {
+    
+}
+
+.about-me__info__name_text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about-me__info__text_text {
+    font-size: 15px;
+}
+
+/* Technical-Skills */
+.technical-skills__title {
+
+}
+
+.technical-skills__title_text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.technical-skills__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.technical-skills .state-iteam {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: white;
+}
+
+.state-iteam__perc-80::after,
+.state-iteam__perc-85::after,
+.state-iteam__perc-95::after {
+    display: block;
+    height: 20px;
+    padding: 5px;
+    color: black;
+    background: rgb(171, 171, 171);
+    text-align: center;
+}
+
+.state-iteam__perc-80::after {
+    width: 80%;
+    content: "80%";
+}
+
+.state-iteam__perc-85::after {
+    width: 85%;
+    content: "85%";
+}
+
+.state-iteam__perc-95::after {
+    width: 95%;
+    content: "95%";
+}
+
+.technical-skills__btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    border: none;
+}
+
+/* Table */
+.price__title {
+
+}
+
+.price__title_text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.price__table {
+    width: 100%;
+    border-spacing: 0;     
+}
+
+.price__table__header-cell,
+.price__table__cell {
+    width: 245px;
+    padding: 10px;
+    text-align: center;
+}
+
+.price__table__header-cell {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.price__table__header-cell_text {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.price__table__header-cell:first-child,
+.price__table__cell:first-child {
+    border-right: 10px solid rgb(91, 91, 91);
+}
+
+.price__table__header-cell_color-57 {
+    background: rgb(57, 57, 57);
+    box-shadow: none;    
+}
+
+.price__table__cell_color-179 {
+    color: black;    
+    background: rgb(179, 179, 179);
+    box-shadow: inset 0px -4px 0px -2px rgb(123, 123, 123);
+}
+
+.price__table__cell_color-159 {
+    background: rgb(159, 159, 159);
+    box-shadow: none;
+}
+
+.price b {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.price__table__btn {
+    margin: 20px;
+    padding: 15px 25px;
+}
+
+.price__table__btn_bg-179 {
+    background: rgb(179, 179, 179);
+    border: none;
+}

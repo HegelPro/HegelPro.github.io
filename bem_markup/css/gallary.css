@@ -1,0 +1,48 @@
+.gallary {
+
+}
+
+.gallary__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gallary__list__iteam {
+
+}
+
+.gallary__list__iteam__link {
+    display: inline-block;
+    
+}
+
+.gallary__list__iteam__photo {
+    width: 333px;
+    height: 200px;
+}
+
+/* router */
+.router {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+.router__btn {
+    font-weight: 400;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: inherit;
+}
+
+.router__btn:hover {
+    color: white;
+    background: black;
+}
