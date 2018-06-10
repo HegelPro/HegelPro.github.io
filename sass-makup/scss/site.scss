@@ -1,0 +1,98 @@
+@import "left";
+@import "right";
+@import "navigation";
+@import "gallary";
+@import "about-me";
+@import "contact-me";
+@import "footer";
+
+$font-main: 'Roboto', sans-serif;
+$font-color-about-me: white;
+$font-normal: 15px;
+$font-big: $font-normal / 3 * 4;
+
+$site-width: 1200px;
+
+$margin-new-section: 30px;
+$padding-main: 40px;
+$padding-about-me: 40px 200px;
+
+$body-bg: rgb(232, 246, 255);
+$gallary-bg: rgb(246, 246, 246);
+$footer-color: rgb(171, 171, 171);
+$about-me-color: rgb(91, 91, 91);
+$contect-me-color: rgb(246, 246, 246);
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: $body-bg;
+    font-family: $font-main;
+}
+
+.site {
+    display: flex;
+    width: $site-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text_big {
+    font-size: $font-big;
+    font-weight: 400;
+}
+
+.text_normal {
+    font-size: $font-normal;
+}
+
+.pos-new-section {
+    margin-top: $margin-new-section;
+}
+
+.our-gallary {
+    padding-bottom: $padding-main;
+
+    &_bg {
+        background: $gallary-bg;
+    }
+}
+
+.our-about-me {
+    padding: $padding-about-me;
+
+    &_text {
+        color: $font-color-about-me;
+        font-weight: 400;
+    }
+    
+    &_color {
+        background: $about-me-color;
+    }
+}
+
+.our-contact-me {
+    padding-top: $padding-main;
+    padding-bottom: $padding-main;
+
+    &_bg {
+        background: $contect-me-color;
+    }
+
+    &__form {
+        &_pos {
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.our-footer {
+    padding: $padding-main;
+}
+
+.our-footer_bg {
+    background: $footer-color;    
+}

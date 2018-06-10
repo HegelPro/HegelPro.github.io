@@ -1,0 +1,34 @@
+$in-input: 5px 0px;
+$in-btn: 10px;
+
+.contact-me-form {
+    &__title {
+        &_pos {
+            text-align: center;
+        }
+    }
+}
+
+.contact-me-form {
+    width: 100%;
+
+    &__btn {
+        width: 100%;
+
+        &_text {
+            padding: $in-btn;    
+        }
+    
+        &_bg-black {
+            background: black;
+            color: white;
+            border: none;    
+        }
+    }
+   
+    &__input {
+        box-sizing: border-box;
+        padding: $in-input;
+        width: 100%;
+    }
+}

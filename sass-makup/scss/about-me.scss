@@ -1,0 +1,136 @@
+$btn-margins: 30px 0 30px 0;
+$btn-paddings: 15px 30px 15px 30px;
+
+$table-btn-margins: 20px;
+$table-btn-paddings: 15px 25px;
+
+$state-el-color: black;
+$state-el-bg: rgb(171, 171, 171);
+
+$state-el-1: 80%;
+$state-el-2: 85%;
+$state-el-3: 95%;
+
+$bg-color: rgb(91, 91, 91);
+$table-color-header: rgb(57, 57, 57);
+$table-color-cell: rgb(179, 179, 179);
+$table-color-bottom: rgb(159, 159, 159);
+$cell-font-color: black;
+$cell-bottom: rgb(123, 123, 123);
+
+.about-me {
+    &__title {
+        &_pos {
+            text-align: center;
+        }
+    }
+
+    &__photo {
+        width: 100%;
+    }
+}
+
+/* Technical-Skills */
+.technical-skills {
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__btn {
+        margin: $btn-margins;
+        padding: $btn-paddings; 
+        border: none;
+    }
+}
+
+.state-iteam {
+    position: relative;
+    width: 100%;
+    height: 30px;
+
+    &_color {
+        background: white; 
+    }
+
+    &__perc-80::after,
+    &__perc-85::after,
+    &__perc-95::after {
+        display: block;
+        height: 20px;
+        padding: 5px;
+        color: $state-el-color;
+        background: $state-el-bg;
+        text-align: center;
+    }
+
+    &__perc-80::after {
+        width: $state-el-1;
+        content: "80%";
+    }
+
+    &__perc-85::after {
+        width: $state-el-2;
+        content: "85%";
+    }
+
+    &__perc-95::after {
+        width: $state-el-3;
+        content: "95%";
+    }
+}
+
+/* Table */
+.price-table {
+    width: 100%;
+    border-spacing: 0;
+
+    &__header-cell,
+    &__cell {
+        padding: 10px;
+        text-align: center;
+    }
+
+    &__header-cell {
+        padding: 40px 0;
+    }
+
+    &__border_right:first-child {
+        border-right: 10px solid $bg-color;
+    }
+
+    &__header-cell_color {
+        background: $table-color-header;
+        box-shadow: none;    
+    }
+
+    &__cell_color {
+        color: $cell-font-color;    
+        background: $table-color-cell;
+        box-shadow: inset 0px -4px 0px -2px $cell-bottom;
+    }
+
+    &__cell_color-last {
+        background: $table-color-bottom;
+        box-shadow: none;
+    }
+
+    &__btn {
+        margin: $table-btn-margins;
+        padding: $table-btn-paddings;
+    
+        &__btn_bg {
+            background: $table-color-cell;
+            border: none;
+        }
+    }
+}
+
+.price_b {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}

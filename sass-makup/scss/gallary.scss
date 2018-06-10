@@ -1,0 +1,54 @@
+$btn-color: white;
+$btn-color-hover: black;
+
+$photo-width: 333px;
+$photo-height: $photo-width / 4 * 3;
+$margin-new-section: 30px;
+
+%list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gallary {
+    &__list {
+        @extend %list;
+    
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__photo {
+        width: $photo-width;
+        height: $photo-height;
+    }
+}
+
+/* router */
+.router {
+    @extend %list;
+
+    display: flex;
+    margin-top: $margin-new-section;
+    justify-content: center;
+
+    &__btn {
+        width: 35px;
+        height: 35px;
+
+        &_text {
+            font-weight: 400;
+        }
+
+        &_color {
+            border: none;
+            background: inherit;
+
+            &:hover {
+                color: $btn-color;
+                background: $btn-color-hover;
+            }
+        }
+    }
+}
