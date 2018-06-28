@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Georgia';
+  src: url('georgia.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('georgiab.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Georgia';
+  font-weight: normal;
+  font-style: normal;
+}
