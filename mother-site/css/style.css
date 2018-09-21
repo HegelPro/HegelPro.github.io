@@ -1,0 +1,645 @@
+*, *
+::before, *
+::after {
+box-sizing: inherit;
+}
+
+html {
+box-sizing: border-box;
+}
+
+.content-box-component {
+box-sizing: content-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    font-size: 0;
+}
+
+.center {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.shadow-one {
+    box-shadow: 0px 3px 8px -3px black;
+}
+
+.gradient-one {
+
+}
+
+.bg-one {
+    background-image: linear-gradient(  to bottom,
+                                        transparent,
+                                        rgba(209, 172, 133, 0.05),
+                                        rgba(209, 172, 133, 0.1),
+                                        rgba(209, 172, 133, 0.15),
+                                        rgba(209, 172, 133, 0.2),
+                                        rgba(209, 172, 133, 0.1),
+                                        transparent );
+                                        
+}
+
+
+
+
+/* Header */
+
+.main-header {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(220, 220, 220, 0.8);
+}
+
+.main-header .flexbox {
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+.logo img {
+    width: 64px;
+    height: 64px;
+}
+
+.logo a:focus,
+.logo a:visited {
+    outline: none;
+}
+
+.main-nav {
+    width: 500px;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.main-nav .nav-iteams {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.sign-page {
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: rgba(220, 220, 220, 0.9);
+}
+
+.nav-iteams li {
+   
+    background: rgba(220, 220, 220, 0.9); 
+    margin-right: 20px;
+}
+
+.nav-iteams li:last-child{
+    margin-right: 0;
+}
+
+.reviews .btn,
+.nav-iteams a,
+.sign-page {
+    display: inline-block;
+    padding: 5px;
+    font-size: large;
+    text-decoration: none;
+    border-radius: 3px;
+    color: rgb(235, 63, 0);
+}
+
+.reviews .btn:hover,
+.nav-iteams a:hover,
+.sign-page a:hover {
+    text-decoration: underline;
+    border-radius: 3px;
+    color: rgb(204, 0, 0);
+}
+
+.nav-iteams li:nth-child(1) {
+
+}
+
+.nav-iteams li:nth-child(1) {
+
+}
+
+.nav-iteams li:nth-child(1) {
+
+}
+
+.main-header .links {
+}
+
+.links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links .iteams .vk a {
+    display: inline-block;
+    background: url("../img/vk.png") no-repeat 7px 7px;
+    background-size: 50px 50px;
+    width: 64px;
+    height: 64px;
+}
+
+.links .iteams .vk a:focus,
+.links .iteams .vk a:visited {
+    outline: none;
+}
+
+.links .iteams .vk a:active,
+.links .iteams .vk a:focus   {
+    outline: 1px solid rgb(190, 21, 210);
+    border-radius: 32px;
+}
+
+
+
+
+
+/* второй хедер */
+
+.second-header {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 420px;
+    min-width: 1000px;
+    margin-bottom: 50px;
+    background: radial-gradient(at bottom,rgb(241, 197, 183), rgb(135, 11, 150));
+    border-bottom: 5px solid rgb(38, 38, 38);
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-image: url("../img/bg-main.jpg");
+    background-position: 0 -15px;
+    background-size: 100%;
+}
+
+.second-header .top {
+    top: 64px;
+    background-position: 0 -15px;
+}
+
+.second-header .bottom {
+    bottom: 0;
+    background-position: 0 -25px;
+}
+
+.second-header h2 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.second-header blockquote p {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: white;
+}
+
+
+
+
+/*  */
+
+.about-ac {
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.about-ac h1 {
+    font-size: 20px;
+}
+
+.about-ac p {
+
+    font-size: 16px;
+}
+
+.what-is-ac {
+    display: inline-block;
+    vertical-align: top;
+    width: 460px;
+    padding: 40px 30px;
+    margin-right: 40px;
+    transform: rotate(2deg);
+}
+
+.what-is-ac p,
+.what-is-ac h1 {
+    transform: rotate(-2deg);
+}
+
+.ac-for {
+    display: inline-block;
+    vertical-align: top;
+    width: 460px;
+    padding: 40px 30px;
+    margin-left: 40px;
+    transform: rotate(-3deg);
+}
+
+.ac-for p,
+.ac-for h1 {
+    transform: rotate(3deg);
+}
+
+
+
+
+/* Важные вещи */
+
+.important-points strong {
+    font-size: 18px;
+}
+
+.important-points p {
+    font-size: 16px;
+}
+
+.important-points .center {
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.point {
+    margin-bottom: 30px;
+    justify-content: flex-start;
+}
+
+.point .txt {
+    padding: 0 20px; 
+}
+
+.point:nth-child(2n) {
+    margin-right: 100px;
+}
+
+.point:nth-child(2n+1) {
+    margin-left: 100px;
+}
+
+.point .icon {
+    min-width: 128px;
+    height: 128px;
+    background-image:   url(../img/spritesheet.png),
+                        linear-gradient(to left, rgba(242, 193, 78, 0.50), rgba(247, 130, 84, 0.500));
+    background-repeat: no-repeat,
+                        no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 1px 3px 5px 2px darkkhaki;
+}
+
+.point:nth-child(2n+1) .icon {
+    order: -1;
+}
+
+.point:nth-child(1) .icon {
+    background-position: 0px 0px, 0 0;
+}
+
+.point:nth-child(2) .icon {
+    background-position: -128px -0px, 0 0;
+}
+
+.point:nth-child(3) .icon {
+    background-position: -256px 0px, 0 0;
+}
+
+.point:nth-child(4) .icon {
+    /* background-position: ; */
+}
+
+.point:nth-child(5) .icon {
+    /* background-position: ; */
+}
+
+
+
+
+
+
+/* About-me */
+
+.about-me {
+    margin-bottom: 80px;
+}
+
+.about-me h2 {
+    font-size: 20px;
+}
+
+.about-me p {
+    font-size: 16px;
+}
+
+.about-me img {
+    display: block;
+    margin-left: 30px;
+    width: 250px;
+    height: 100%;
+    background-color: gray;
+    border-radius: 50% 50% 100px 100px / 70% 70% 30px 30px;
+    /* border: 3px solid rgba(49, 196, 212, 0.84); */
+    box-shadow: 
+                0 0 9px -5px gold,
+                0 0 9px 6px hsla(76, 100%, 50%, 0.611),
+                0 0 9px 8px #e2bc20a8,
+                0 0 9px 10px #1c7e7e6b;
+}
+
+.about-me .discription {
+    margin-left: 50px;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+/* Стоимость */
+
+.cost {
+    margin-bottom: 80px;
+}
+
+.cost h2 {
+  font-size: 20px;
+}
+
+.cost p {
+  font-size: 16px;
+}
+
+.cost ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/* Отзывы */
+
+.reviews {
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.reviews h2 {
+    position: relative;
+    left: -60px;
+    font-size: 20px;
+}
+
+.reviews .review {
+  
+}
+
+.review blockquote {
+}
+
+.review blockquote p {
+  font-size: 15px;
+}
+
+.review .avatar-vk {
+    order: -1;
+    border-radius: 50%;
+    display: block;
+    align-self: flex-start;
+
+}
+
+.reviews .btn {
+    margin-top: 20px;
+}
+
+.avatar-vk img {
+  width: 64px;
+  height: 64px;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form */
+
+.sign-for-dis {
+    margin-top: 64px;
+    background-color: rgb(190, 21, 210);
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    min-width: 1000px;
+    padding-top: 50px;
+    font-family: "Times New Roman", Times, serif;
+    /* min-height: 300px; */
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 5px solid rgb(38, 38, 38);
+    background-image: linear-gradient(
+                                rgb(241, 197, 183),
+                                rgb(185, 85, 196) 20%,
+                                rgb(111, 6, 123) 50%,
+                                rgb(95, 4, 106) 60%,                                
+                                rgb(50, 6, 55) 95%);
+}
+
+.footer-top {
+    justify-content: space-between;
+}
+
+.footer-top .logo-footer {
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    background-image: url("../img/logo.png");
+    background-position:  0 0;
+    background-size: 100% auto;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+}
+
+footer .contant,
+.footer-info {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+footer .contant a,
+.footer-info a {
+    color: rgb(204, 177, 88);
+    text-decoration: none;
+}
+
+.footer-info {
+    margin-right: 100px;
+}
+
+.links-social {
+    justify-content: center;
+}
+
+.links-social a {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+
+.links-social li:nth-child(1) a {
+    background: url("../img/vk.png") no-repeat 0 0;
+    background-size: 54px 54px;
+}
+
+.links-social li:nth-child(2) a {
+    background: url("../img/youtube.png") no-repeat 0 0;
+    background-size: 54px 54px;
+}
+
+.links-social li:nth-child(3) a {
+    background: url("../img/instagram.png") no-repeat 0 0;
+    background-size: 54px 54px;
+}
+
+
+/* Sprites
+
+
+sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-if_Yoga_01_1515155 {
+    width: 128px;
+    height: 128px;
+    background-position: -10px -10px;
+}
+
+.sprite-if_Yoga_02_1515146 {
+    width: 128px;
+    height: 128px;
+    background-position: -158px -10px;
+}
+
+.sprite-if_Yoga_03_1515154 {
+    width: 128px;
+    height: 128px;
+    background-position: -306px -10px;
+}
+
+.sprite-if_Yoga_04_1515153 {
+    width: 128px;
+    height: 128px;
+    background-position: -454px -10px;
+}
+
+.sprite-if_Yoga_05_1515147 {
+    width: 128px;
+    height: 128px;
+    background-position: -602px -10px;
+}
+
+.sprite-if_Yoga_06_1515148 {
+    width: 128px;
+    height: 128px;
+    background-position: -750px -10px;
+}
+
+.sprite-if_Yoga_07_1515151 {
+    width: 128px;
+    height: 128px;
+    background-position: -898px -10px;
+}
+
+.sprite-if_Yoga_08_1515152 {
+    width: 128px;
+    height: 128px;
+    background-position: -1046px -10px;
+}
+
+.sprite-if_Yoga_09_1515149 {
+    width: 128px;
+    height: 128px;
+    background-position: -1194px -10px;
+}
+
+.sprite-if_Yoga_10_1515150 {
+    width: 128px;
+    height: 128px;
+    background-position: -1342px -10px;
+}
+
+
+*/
