@@ -1270,7 +1270,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var WebsocketService = /** @class */ (function () {
     function WebsocketService() {
-        this.ws = new WebSocket("ws://localhost:5000");
+        this.ws = new WebSocket("ws://104.197.112.220:5000");
         this.events = {};
     }
     WebsocketService.prototype.on = function (event, func) {
